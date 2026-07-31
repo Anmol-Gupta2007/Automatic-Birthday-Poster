@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎂 Birthday Automation</h1>
+
+  <form id="birthdayForm">
+    <label>Name:</label>
+    <input type="text" id="name" required><br>
+
+    <label>Date:</label>
+    <input type="date" id="date" required><br>
+
+    <label>Instagram ID:</label>
+    <input type="text" id="instagram"><br>
+
+    <label>WhatsApp Number:</label>
+    <input type="text" id="whatsapp"><br>
+
+    <label>Custom Message:</label>
+    <textarea id="message"></textarea><br>
+
+    <label>Background Poster:</label>
+    <input type="file" id="background" accept="image/*"><br>
+
+    <label>Photo of Person:</label>
+    <input type="file" id="photo" accept="image/*"><br>
+
+    <button type="submit">Generate Poster</button>
+  </form>
+
+  <div id="posterPreview">
+    <h2>Preview</h2>
+    <canvas id="posterCanvas" width="400" height="400"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
